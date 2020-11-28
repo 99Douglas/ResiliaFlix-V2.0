@@ -1,6 +1,7 @@
 .card-largura {
     max-width: 18rem;
 }
+
 .imagem-carrossel {
     object-fit: cover;
     object-position: 0 -30%;
@@ -19,6 +20,7 @@
 .cor-especial {
     color:#419a1c;
 }
+
 .btn-cor-especial {
     background-color: #419a1c;
     color: white;
@@ -28,9 +30,6 @@
     border-color: #419a1c;
 }
 
-.card-posicao-imagem {
-    object-fit: cover;
-    height: 100px;
-
+.footer-cor {
+    background-color: #f8f9fa04 !important;
 }
-
