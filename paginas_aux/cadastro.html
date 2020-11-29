@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
-    <title>Cadastro- Resiliaflix</title>
+    <title>Cadastro - Resiliaflix</title>
 </head>
 
 <body>
     <!--Barra de Navegação-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../pagina_inicial/index.html">
                 <img src="../pagina_inicial/img/logo_resiliaflix.png" width="100" height="100"
                     class="d-inline-block align-top" alt="">
             </a>
@@ -29,22 +29,21 @@
             </button>
             <div class="collapse navbar-collapse justify-content-right" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#">Home<span
+                    <li class="nav-item"><a class="nav-link" href="../pagina_inicial/index.html">Home<span
                                 class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes</a>
+                    <li class="nav-item"><a class="nav-link" href="../paginas_aux/filmes.html">Filmes</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="series.html">Séries</a>
+                    <li class="nav-item"><a class="nav-link" href="../paginas_aux/series.html">Séries</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a>
+                    <li class="nav-item active"><a class="nav-link" href="../paginas_aux/cadastro.html">Cadastro</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a>
+                    <li class="nav-item"><a class="nav-link" href="../paginas_aux/contato.html">Contato</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 ml-auto p-2 bd-highlight">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    <button class="btn btn-success my-2 my-sm-0 ml-2" type="submit">Login</button>
                 </form>
             </div>
 
@@ -64,18 +63,18 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputEmail4">Nome</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <input type="text" class="form-control" id="inputNome">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputPassword4">Sobrenome</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <input type="text" class="form-control" id="inputSobrenome">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputEmail4">E-mail</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <input type="email" class="form-control" id="inputEmail">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="inputPassword4">Senha</label>
@@ -93,7 +92,7 @@
                         <label for="inputCPF">CPF</label>
                         <input type="text" class="form-control" id="inputCPF">
                     </div>
-                
+
                     <div class="form-group col-md-4">
                         <label for="inputUser">Usuário</label>
                         <input type="text" class="form-control" id="inputUser">
@@ -109,18 +108,22 @@
                 <h5>Endereço</h5>
                 <hr class="my-2">
 
-                
+
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputEndereco">Rua</label>
                         <input type="text" class="form-control" id="inputEndereco">
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-2">
+                        <label for="inputComplemento">Número</label>
+                        <input type="text" class="form-control" id="inputNumero">
+                    </div>
+                    <div class="form-group col-md-2">
                         <label for="inputComplemento">Complemento</label>
                         <input type="text" class="form-control" id="inputComplemento">
                     </div>
 
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-2">
                         <label for="inputBairro">Bairro</label>
                         <input type="text" class="form-control" id="inputBairro">
                     </div>
@@ -132,33 +135,80 @@
                         <input type="text" class="form-control" id="inputCidade">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="inputCity">Estado</label>
-                        <input type="text" class="form-control" id="inputCidade">
+                        <label for="inputState">Estado</label>
+                        <select class="form-control" id="inputEstado">
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                        </select>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="inputZip">CEP</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <label for="inputCep">CEP</label>
+                        <input type="text" class="form-control" id="inputCep">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="gridCheck">
                         <label class="form-check-label" for="gridCheck">
-                            Li e aceito os <a href="terms.html">Termos e condições de uso</a>
+                            Li e aceito os <a href="404.html">Termos e condições de uso</a>
                         </label>
                     </div>
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success btn-lg pl-5 pr-5" href="../pagina_inicial/index.html"> Cadastrar </button>
+                    <a type="submit" class="btn btn-success btn-lg pl-5 pr-5" href="../pagina_inicial/index.html"
+                        data-toggle="modal" data-target="#successModal"> Cadastrar </a>
                 </div>
             </form>
-            
         </div>
+
+        <!--Modal Sucesso-->
+        <div class="modal fade" id="successModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-especial">
+                        <h5 class="modal-title" id="successModalLabel">Obrigado!</h5>
+                    </div>
+                    <div class="modal-body">
+                        Agora você está pronto para aproveitar todo nosso conteúdo, flixer!
+                    </div>
+                    <div class="modal-footer">
+                        <a type="button" class="btn btn-success" href="../pagina_inicial/index.html">Eba!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <!--rodapé-->
     <footer class="d-flex justify-content-center footer-cor">
-        <a href="#">
+        <a href="../pagina_inicial/index.html">
             <img src="../pagina_inicial/img/logo_resiliaflix.png" width="100" height="100"
                 class="d-inline-block align-top" alt="">
         </a>
