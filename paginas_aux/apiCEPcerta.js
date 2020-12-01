@@ -27,7 +27,6 @@ class UserModel
                     }
                 }catch(error){
                     alert(error.message)
-                    // document.location.reload(true)
                 }
             })
 
@@ -47,6 +46,9 @@ class UserModel
         _atualiza( dados )
         {
             console.log(dados)
+            
+            if(dados.erro == true)alert("cep invalido, digite um CEP existente")
+
             this._bairro = dados.bairro;
             this._cidade = dados.localidade;
             this._rua = dados.logradouro;
