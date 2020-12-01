@@ -8,10 +8,10 @@ class Model {
         this._poster = "";
     }
 
-    requisicao (filme) {
+    requisicao (filme, callback) {
         let pedido = new XMLHttpRequest();
 
-        pedido.open("GET", `http://www.omdbapi.com/?apikey=9eb34366&t=${filme}`, false);
+        pedido.open("GET", `http://www.omdbapi.com/?apikey=9eb34366&t=${filme}`);
 
         pedido.addEventListener("load", () => {
             if(pedido.status == 200 && pedido.readyState == 4) {
@@ -23,12 +23,13 @@ class Model {
                 this._ano = filme.Year;
                 this._diretor = filme.Director;
                 this._poster = filme.Poster;
+
+                callback();
             }
         });
 
         pedido.send();
-
-        console.log(this);
+        
     }
 
     get titulo() {
