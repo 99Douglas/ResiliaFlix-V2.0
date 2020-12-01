@@ -1,11 +1,11 @@
-class ControllerPaginaInicial {
+class Controller {
 
     constructor() {
         [...document.querySelectorAll('.cards-filmes')].forEach(function(card) {
             card.addEventListener("click", () => {
                 let filme = card.id;
     
-                let controller = new ControllerPaginaInicial();
+                let controller = new Controller();
                 controller.procuraEMostraFilme(filme);
             })
         })
@@ -13,12 +13,12 @@ class ControllerPaginaInicial {
 
     procuraEMostraFilme (filme) {
 
-        let model = new ModelPaginaInicial()
+        let model = new Model()
         model.requisicao(filme);
 
-        let view = new ViewPaginaInicial()
+        let view = new View()
         view.mostraFilme(model);
     }
 }
 
-let controlar = new ControllerPaginaInicial()
+let controlar = new Controller()
