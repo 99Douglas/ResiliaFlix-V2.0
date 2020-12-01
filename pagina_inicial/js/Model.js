@@ -1,10 +1,11 @@
-class ModelPaginaInicial {
+class Model {
     constructor() {
         this._titulo = "";
         this._descricao = "";
         this._nota = "";
         this._ano = "";
         this._diretor = "";
+        this._poster = "";
     }
 
     requisicao (filme) {
@@ -21,6 +22,7 @@ class ModelPaginaInicial {
                 this._nota = filme.Rated;
                 this._ano = filme.Year;
                 this._diretor = filme.Director;
+                this._poster = filme.Poster;
             }
         });
 
@@ -47,5 +49,9 @@ class ModelPaginaInicial {
 
     get diretor() {
         return this._diretor;
+    }
+
+    get poster() {
+        return this._poster;
     }
 }
