@@ -14,10 +14,10 @@ class Controller {
     procuraEMostraFilme (filme) {
 
         let model = new Model()
-        model.requisicao(filme);
-
-        let view = new View()
-        view.mostraFilme(model);
+        model.requisicao(filme, () => {
+            let view = new View()
+            view.mostraFilme(model);
+        });
     }
 }
 
