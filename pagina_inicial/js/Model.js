@@ -11,7 +11,7 @@ class Model {
     requisicao (filme, callback) {
         let pedido = new XMLHttpRequest();
 
-        pedido.open("GET", `http://www.omdbapi.com/?apikey=9eb34366&t=${filme}`);
+        pedido.open("GET", `https://www.omdbapi.com/?apikey=9eb34366&t=${filme}`);
 
         pedido.addEventListener("load", () => {
             if(pedido.status == 200 && pedido.readyState == 4) {
