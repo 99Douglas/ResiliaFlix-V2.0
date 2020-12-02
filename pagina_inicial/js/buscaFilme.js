@@ -15,23 +15,16 @@ class ModelPesquisa
             let request = new XMLHttpRequest();
             
             request.addEventListener( "load", () =>{ 
-                try
-                {
                     if ( request.status == 200 )
                     {                
                         let dados = this._processaResponse( request.responseText );
                         this._atualiza( dados );
-                    }else{
-                        throw new Error("Filme não encontrado!")
                     }
-                }catch(error){
-                    alert(error.message)
-                    window.location.href = "../paginas_aux/404.html"
-                }
+                    
                 callback()
             })
 
-            request.open( "GET", "http://www.omdbapi.com/?t=" + filme + "&apikey=e43443b7", false);
+            request.open("GET", `https://www.omdbapi.com/?apikey=9eb34366&t=${filme}`);
 
             request.send();
         }
@@ -44,7 +37,7 @@ class ModelPesquisa
 
         _atualiza( dados )
         {
-            if (dados.Response = "False") {
+            if (dados.Response == "False") {
                 
                 window.location.href = "../paginas_aux/404.html"
 
