@@ -42,10 +42,6 @@
                     <li class="nav-item"><a class="nav-link" href="../paginas_aux/contato.html">Contato</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0 ml-auto p-2 bd-highlight">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="buscaFilme">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="botaoBusca" data-toggle="modal" data-target="#moviemodal" alt="...">Search</button>
-                </form>
             </div>
 
         </nav>
@@ -109,10 +105,12 @@
                 <h5>Endereço</h5>
                 <hr class="my-2">
 
-                <div>
-                    <label for="inputCep">CEP</label>
-                    <input type="text" placeholder="Digite seu CEP..." id="cep">
-                    <button id="busca">Busca CEP:</button>
+                <label for="inputCep">CEP</label>
+                <div class="input-group mb-3 col-md-4 p-0">
+                    <input type="text" class="form-control" placeholder="Digite seu cep..." aria-label="CEP" aria-describedby="busca" id="cep">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="busca">Buscar</button>
+                    </div>
                 </div>
 
                 <div class="form-row">
