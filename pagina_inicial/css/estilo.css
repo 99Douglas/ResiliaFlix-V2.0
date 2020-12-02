@@ -33,3 +33,18 @@
 .footer-cor {
     background-color: #f8f9fa04;
 }
+
+@media (max-width: 850px) {
+
+    .imagem-carrossel {
+        object-position: 85% 0%;
+    }
+    .imagem-carrossel-dois {
+        object-position: 45% -30%;
+    }
+
+    .resp {
+        flex-direction: column;
+
+    }
+}

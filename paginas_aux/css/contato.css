@@ -22,3 +22,10 @@
 .img-round {
     border-radius: 300px;
 }
+
+@media (max-width: 850px) {
+
+    .resp {
+        flex-direction: column;
+    }
+}
